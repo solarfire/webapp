@@ -8,6 +8,7 @@ public class WelcomeController {
 
     @GetMapping(value="init")
     public WelcomeBean get() {
-        return new WelcomeBean(System.getProperty("os.name"));
+
+        return new WelcomeBean(System.getProperty("os.name") + " " + System.getProperty("os.name"));
     }
 }
